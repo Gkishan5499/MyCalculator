@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			 padding: 0px;
+			
+			
+			 	
+
+			
+		
+			
+			 
+		
+		
+		
+		
+		}
+		.cal{
+			width: 600px;
+			height: 400px;
+			background-color: black;
+			padding: 10px;
+			margin: 50px 0px 0px 200px;
+			border-radius: 20px;
+			position: static;
+
+		}
+		.cal p{
+			font-size: 30px;
+			color:white;
+			font-weight: bold;
+			margin: 20px 0px 10px 20px;
+		}
+
+		input[type="text"]{
+			width: 440px;
+			height: 40px;
+			font-size: 24px;
+			border:5px solid #0099CC;
+			background:white;
+
+			
+		}
+		input[type="button"]
+		{
+			width: 140px;
+			height: 50px;
+			font-size: 26px;
+			border:1px solid black;
+			padding-bottom: 20px;
+			background: #00CC66
+;
+		}
+
+
+	</style>
+	
+</head>
+<body>
+	
+	<div class="cal">
+		<p>Kishan Kumar's Calculator</p>
+	<table border="1">
+		<tr>
+	
+
+<td colspan="3">	<input type="text" id="txtcal" placeholder="0"></td>
+	<td><input type="button" value="=" onclick="man()"></td>
+</tr>
+<tr>
+	
+	
+	
+	<td><input type="button" value="1" onclick="dis('1')"></td>
+	<td><input type="button" value="2" onclick="dis('2')"></td>
+	<td><input type="button" value="3" onclick="dis('3')"></td>
+	<td><input type="button" value="/" onclick="dis('/')"></td>
+
+</tr>
+<tr>
+
+	<td><input type="button" value="4" onclick="dis('4')"></td>
+	<td><input type="button" value="5" onclick="dis('5')"></td>
+	<td><input type="button" value="6" onclick="dis('6')"></td>
+	<td><input type="button" value="+" onclick="dis('+')"></td>
+</tr>
+<tr>
+
+	<td><input type="button" value="7" onclick="dis('7')"></td>
+	<td><input type="button" value="6" onclick="dis('8')"></td>
+	<td><input type="button" value="9" onclick="dis('9')"></td>
+	<td><input type="button" value="0" onclick="dis('0')"></td>
+	</tr>
+	<tr>
+
+	<td><input type="button" value="-" onclick="dis('-')"></td>
+	<td><input type="button" value="*" onclick="dis('*')"></td>
+	<td><input type="button" value="." onclick="dis('.')"></td>
+	<td><input type="button" value="c" onclick="clr('c')"></td>
+</tr>
+
+
+
+</table>
+</div>
+
+    <script type="text/javascript">
+    	function man()
+    	{
+    		let x=document.getElementById("txtcal").value;
+    		let y= eval(x);
+
+
+    		//var a=eval(document.getElementById("txtcal").value);
+    	document.getElementById("txtcal").value=y;
+    	}
+    	function dis(val)
+    	{
+    		document.getElementById("txtcal").value+=val
+    	}
+    	function clr()
+    	{
+    		document.getElementById("txtcal").value="";
+    	}
+    	
+    </script>
+
+</body>
+</html>
